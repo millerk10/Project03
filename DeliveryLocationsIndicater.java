@@ -1,70 +1,41 @@
-//Abdullah
+//  https://www.baeldung.com/java-distance-between-two-points
+public class DeliveryLocationsIndicater implements Comparable<DeliveryLocationsIndicater> {
 
-public class DeliveryLocationsIndicater implements Comparable<DeliveryLocationsIndicater>{
-
-    int HouseNumber;
-    int streetNumber;
-    Compass StreetName;
-
+    private int HouseNumber;
+    private int streetNumber;
+    private Compass StreetName;
 
 
-
-    public DeliveryLocationsIndicater(int HouseNumber,  int streetNumber, Compass StreetName) {
+    public DeliveryLocationsIndicater(int HouseNumber, Compass compass, int streetNumber) {
         this.HouseNumber = HouseNumber;
         this.streetNumber = streetNumber;
-        this.StreetName = StreetName;
+        this.StreetName = compass;
+
 
     }
 
-    @Override
-    public String toString() {
-        return HouseNumber + " " + StreetName + " " + streetNumber ;
-    }
 
-
-    public Compass getStreetName() {
-        return StreetName;
-    }
-
-    public int DistanceBetweenTruckLocationAndOrder(DeliveryLocationsIndicater o) {
-
-        int houeseNum = o.getHouseNumber();
-
-        int streetNum = o.getStreetNumber();
-        Compass compass = o.getStreetName();
-
-
-        //  https://www.baeldung.com/java-distance-between-two-points
-        if ( streetNum == streetNumber && compass == getStreetName() ) {
-            return Math.abs(houeseNum - HouseNumber);
+    public int DistanceBetweenTwoPoints(DeliveryLocationsIndicater o) {
+        Compass facing = o.getStreetName();
+        if (o.getStreetNumber() == streetNumber && facing == o.getStreetName()) {
+            return Math.abs(o.getHouseNumber() - HouseNumber);
+        } else if (facing == StreetName) {
+            int x1 = Math.abs(o.getHouseNumber() - HouseNumber);
+            int y1 = Math.abs((o.getStreetNumber() * 100) - (streetNumber * 100));
+            return y1 + x1;
+        } else {
+            int x1 = Math.abs(o.getHouseNumber() - (streetNumber * 100));
+            int y1 = Math.abs((o.getStreetNumber() * 100) - HouseNumber);
+            return y1 + x1;
         }
-        else {
 
 
-            double x1 =  ((houeseNum-910) * ((houeseNum-910) + (streetNum - 9)*(streetNum - 9)));
-            double y1 = ((streetNum-910) * ((houeseNum-910) + (streetNum - 9)*(streetNum - 9)));
-            int x = (int) x1;
-            int y = (int) y1;
-
-
-            return x+y;
-
-
-        }
     }
-
 
     @Override
     public int compareTo(DeliveryLocationsIndicater o) {
-        int distanceO;
-        int currDistance;
-        distanceO = o.DistanceBetweenTruckLocationAndOrder(TruckLocation.center);
-        currDistance = this.DistanceBetweenTruckLocationAndOrder(TruckLocation.center);
-        if (currDistance > distanceO) {
-            return 1;
-        } else if (currDistance < distanceO)
-            return -1;
-        return 0;
+
+       return Integer.compare(this.DistanceBetweenTwoPoints(TruckLocation.center), o.DistanceBetweenTwoPoints(TruckLocation.center));
     }
 
     public int getHouseNumber() {
@@ -77,5 +48,13 @@ public class DeliveryLocationsIndicater implements Comparable<DeliveryLocationsI
     }
 
 
+    public Compass getStreetName() {
+        return StreetName;
+    }
 
+    @Override
+    public String toString() {
+        return "\n"+ "[" + HouseNumber + " " + StreetName + " " + streetNumber + "]";
+    }
 }
+

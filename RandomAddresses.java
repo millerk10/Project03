@@ -8,14 +8,14 @@ import java.io.IOException;
  * Created by espinoa@moravian.edu on 2/27/19.
  */
 public class RandomAddresses {
+     int HouseNumber;
+     int StreetAddress;
+     int StreetNumber;
+     String StreetName;
+     String FinalAddress;
+     int  count;
 
-    private int HouseNumber;
-    private int StreetAddress;
-    private int StreetNumber;
-    private String StreetName;
-    private String FinalAddress;
-    private int count;
-    private Random randomgenerator = new Random();
+     Random randomgenerator = new Random();
 
     public void GenerateAddresses()
     {
@@ -34,8 +34,10 @@ public class RandomAddresses {
                 HouseNumber = 1 + randomgenerator.nextInt(100);
                 HouseNumber = HouseNumber * 10;
             }
+            final int  MINIMUM= 100;
+            final int MAX = 400;
+            StreetAddress = 1+randomgenerator.nextInt(MAX - MINIMUM) + MINIMUM;
 
-            StreetAddress = 1+randomgenerator.nextInt(10);
             FinalAddress = String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
             AddressList[count] = FinalAddress;
             count++;
@@ -60,6 +62,30 @@ public class RandomAddresses {
         catch (IOException e){
             System.out.println();
         }
+    }
+
+    public int getHouseNumber() {
+        return HouseNumber;
+    }
+
+    public int getStreetAddress() {
+        return StreetAddress;
+    }
+
+    public int getStreetNumber() {
+        return StreetNumber;
+    }
+
+    public String getStreetName() {
+        return StreetName;
+    }
+
+    public String getFinalAddress() {
+        return FinalAddress;
+    }
+
+    public int getCount() {
+        return count;
     }
 }
 

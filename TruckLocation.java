@@ -1,12 +1,29 @@
-//Abdullah Alramyan
-public class TruckLocation {
-    public static final DeliveryLocationsIndicater center = new DeliveryLocationsIndicater(910, 9, Compass.East);
+import java.util.PriorityQueue;
 
-    public DeliveryLocationsIndicater trucklocation;
+public class TruckLocation {
+
+    public static final DeliveryLocationsIndicater center = new DeliveryLocationsIndicater(910, Compass.South, 9);
+
+
+    public DeliveryLocationsIndicater truckLocation;
+
+    public PriorityQueue<DeliveryLocationsIndicater> Destinations = new PriorityQueue<>();
+
     public TruckLocation(int HouseNumber, int StreetNumber, Compass compass) {
-        trucklocation = new DeliveryLocationsIndicater(HouseNumber, StreetNumber, compass);
+        truckLocation = new DeliveryLocationsIndicater(HouseNumber, compass, StreetNumber);
+
     }
-    public DeliveryLocationsIndicater locationofthetrucknow() {
-        return trucklocation;
+
+    public PriorityQueue<DeliveryLocationsIndicater> getDestinations() {
+        return Destinations;
+    }
+
+    public void setDestinations(PriorityQueue<DeliveryLocationsIndicater> destinations) {
+        Destinations = destinations;
+    }
+
+    public static DeliveryLocationsIndicater getCenter() {
+        return center;
     }
 }
+
