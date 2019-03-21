@@ -3,19 +3,24 @@ import java.util.Random;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
-
-/**
+/*
  * Created by espinoa@moravian.edu on 2/27/19.
  */
 public class RandomAddresses {
-     int HouseNumber;
-     int StreetAddress;
-     int StreetNumber;
-     String StreetName;
-     String FinalAddress;
-     int  count;
-
-     Random randomgenerator = new Random();
+    int HouseNumber;
+    int StreetAddress;
+    int StreetNumber;
+    String StreetName;
+    String FinalAddress;
+    int  count;
+    int Hour;
+    int Minute;
+    static int MaxHour = 19;
+    static int MinHour = 10;
+    static int MaxMinute = 59;
+    Random randomgenerator = new Random();
+    Random HourGenerator = new Random();
+    Random MinuteGenerator= new Random();
 
     public void GenerateAddresses()
     {
@@ -37,8 +42,21 @@ public class RandomAddresses {
             final int  MINIMUM= 100;
             final int MAX = 400;
             StreetAddress = 1+randomgenerator.nextInt(MAX - MINIMUM) + MINIMUM;
+            Hour = HourGenerator.nextInt(MaxHour - MinHour) + MinHour;
+            boolean Morning = true;
+            if (Hour >= 13){
+                Hour= Hour - 12;
+                Morning = false;}
+            if (Hour == 12){
+                Morning = false;}
+            Minute = MinuteGenerator.nextInt(MaxMinute);
+            if (Minute < 10){
+                FinalAddress = Hour + ":0" + Minute + (Morning ? "am" : "pm") + " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
 
-            FinalAddress = String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
+            }
+            else {
+                FinalAddress = Hour + ":" + Minute + (Morning ? "am" : "pm")+ " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
+            }
             AddressList[count] = FinalAddress;
             count++;
             WriteAddressToFile(AddressList);
@@ -88,4 +106,3 @@ public class RandomAddresses {
         return count;
     }
 }
-
