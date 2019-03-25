@@ -7,10 +7,10 @@ import java.io.IOException;
  * Created by espinoa@moravian.edu on 2/27/19.
  */
 public class RandomAddresses {
-    int HouseNumber;
-    int StreetAddress;
-    int StreetNumber;
-    String StreetName;
+    static int HouseNumber;
+    static int StreetAddress;
+    static int StreetNumber;
+    static String StreetName;
     String FinalAddress;
     int  count;
     int Hour;
@@ -21,6 +21,16 @@ public class RandomAddresses {
     Random randomgenerator = new Random();
     Random HourGenerator = new Random();
     Random MinuteGenerator= new Random();
+    public RandomAddresses() {
+
+    }
+
+
+    public RandomAddresses(int HouseNumber, int StreetNumber, String StreetName) {
+        this.HouseNumber = HouseNumber;
+        this.StreetNumber = StreetNumber;
+        this.StreetName = StreetName;
+    }
 
     public void GenerateAddresses()
     {
@@ -82,23 +92,23 @@ public class RandomAddresses {
         }
     }
 
-    public int getHouseNumber() {
+    public static int getHouseNumber() {
         return HouseNumber;
     }
 
-    public int getStreetAddress() {
+    public static int getStreetAddress() {
         return StreetAddress;
     }
 
-    public int getStreetNumber() {
+    public static int getStreetNumber() {
         return StreetNumber;
     }
 
-    public String getStreetName() {
+    public  static String getStreetName() {
         return StreetName;
     }
 
-    public String getFinalAddress() {
+    public  String getFinalAddress() {
         return FinalAddress;
     }
 

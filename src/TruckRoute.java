@@ -9,6 +9,9 @@ import java.util.LinkedList;
 
 public class TruckRoute extends ReadAddresses{
 
+
+
+
     public static LinkedList getCurrentRoute(){
         //DISTRIBUTION CENTER IS 910 SOUTH 9TH STREET
         String DistributionCenter = "10:00am 910 SOUTH 9 STREET";

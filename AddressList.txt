@@ -1,100 +1,100 @@
-1582 South 7 Street
-960 East 6 Street
-1183 South 18 Street
-320 East 2 Street
-20 East 2 Street
-280 East 3 Street
-970 East 0 Street
-1895 South 19 Street
-513 South 16 Street
-128 South 10 Street
-560 East 2 Street
-1202 South 19 Street
-730 East 8 Street
-990 East 2 Street
-680 East 8 Street
-380 East 7 Street
-1920 South 3 Street
-670 East 5 Street
-90 East 0 Street
-810 East 3 Street
-1365 South 6 Street
-50 East 1 Street
-490 East 7 Street
-1819 South 5 Street
-920 East 4 Street
-450 East 1 Street
-510 East 6 Street
-112 South 8 Street
-1998 South 15 Street
-790 East 0 Street
-1954 South 6 Street
-150 East 6 Street
-970 East 3 Street
-80 East 5 Street
-1750 South 17 Street
-1013 South 19 Street
-820 South 1 Street
-458 South 3 Street
-980 East 9 Street
-1426 South 13 Street
-934 South 11 Street
-1722 South 10 Street
-70 East 8 Street
-240 East 7 Street
-1803 South 12 Street
-190 East 7 Street
-300 East 7 Street
-1897 South 2 Street
-640 East 3 Street
-121 South 2 Street
-690 East 1 Street
-527 South 10 Street
-780 East 2 Street
-149 South 5 Street
-104 South 10 Street
-620 South 17 Street
-460 South 7 Street
-1505 South 10 Street
-710 East 8 Street
-1420 South 3 Street
-877 South 0 Street
-200 East 2 Street
-710 East 2 Street
-1040 South 19 Street
-600 East 1 Street
-860 East 9 Street
-820 East 6 Street
-772 South 3 Street
-528 South 17 Street
-570 East 8 Street
-1002 South 4 Street
-520 South 19 Street
-1726 South 18 Street
-900 East 5 Street
-840 East 9 Street
-770 East 3 Street
-2003 South 7 Street
-970 East 9 Street
-150 South 10 Street
-1881 South 1 Street
-358 South 0 Street
-40 East 4 Street
-1812 South 1 Street
-620 East 8 Street
-1100 South 14 Street
-1446 South 3 Street
-485 South 1 Street
-140 East 0 Street
-1000 East 7 Street
-390 East 9 Street
-60 East 7 Street
-51 South 5 Street
-330 East 1 Street
-880 East 1 Street
-520 East 6 Street
-240 East 4 Street
-860 East 6 Street
-472 South 9 Street
-1658 South 8 Street
-669 South 3 Street
+4:33pm 116 South 17 Street
+4:46pm 1329 South 19 Street
+5:35pm 1594 South 19 Street
+3:58pm 390 East 0 Street
+2:09pm 1387 South 5 Street
+6:54pm 1890 South 10 Street
+12:18pm 320 East 0 Street
+10:14am 1023 South 17 Street
+4:39pm 1946 South 7 Street
+3:25pm 580 East 1 Street
+4:32pm 412 South 1 Street
+5:49pm 352 South 7 Street
+1:17pm 80 East 9 Street
+3:17pm 1437 South 12 Street
+11:27am 620 East 1 Street
+2:05pm 1026 South 14 Street
+6:23pm 1040 South 12 Street
+11:28am 680 East 0 Street
+11:50am 223 South 2 Street
+3:09pm 170 East 3 Street
+6:20pm 473 South 15 Street
+4:05pm 180 East 1 Street
+12:02pm 440 East 4 Street
+6:26pm 525 South 10 Street
+1:48pm 236 South 15 Street
+12:24pm 201 South 5 Street
+10:23am 1897 South 0 Street
+1:45pm 700 East 5 Street
+10:43am 630 East 5 Street
+2:53pm 1133 South 2 Street
+4:26pm 979 South 8 Street
+3:08pm 1284 South 11 Street
+12:03pm 1888 South 18 Street
+4:38pm 1142 South 12 Street
+2:47pm 900 East 1 Street
+12:30pm 878 South 14 Street
+5:50pm 370 South 1 Street
+10:21am 1802 South 3 Street
+12:00pm 1684 South 3 Street
+4:10pm 1644 South 5 Street
+11:22am 160 East 3 Street
+11:15am 470 East 5 Street
+10:41am 1228 South 10 Street
+12:38pm 420 East 7 Street
+5:38pm 860 East 9 Street
+5:38pm 1851 South 19 Street
+2:15pm 200 East 8 Street
+11:49am 1288 South 2 Street
+6:46pm 946 South 7 Street
+12:42pm 1144 South 16 Street
+12:41pm 447 South 15 Street
+6:52pm 1047 South 19 Street
+1:36pm 380 East 6 Street
+1:19pm 60 East 2 Street
+12:56pm 410 South 2 Street
+3:05pm 1052 South 5 Street
+2:24pm 1177 South 7 Street
+6:33pm 484 South 15 Street
+10:13am 140 East 4 Street
+12:02pm 624 South 11 Street
+4:04pm 425 South 2 Street
+3:55pm 530 East 9 Street
+5:40pm 327 South 7 Street
+1:34pm 1020 South 19 Street
+5:50pm 1496 South 17 Street
+1:01pm 660 East 2 Street
+5:27pm 1769 South 1 Street
+10:40am 1480 South 13 Street
+3:05pm 1094 South 16 Street
+1:27pm 670 East 1 Street
+1:39pm 420 East 9 Street
+12:48pm 1661 South 18 Street
+1:31pm 670 East 0 Street
+10:41am 930 East 0 Street
+3:56pm 185 South 18 Street
+10:34am 947 South 6 Street
+12:36pm 1890 South 17 Street
+5:50pm 680 East 0 Street
+11:29am 740 East 6 Street
+10:46am 610 East 8 Street
+10:14am 961 South 1 Street
+12:17pm 260 East 0 Street
+4:10pm 539 South 19 Street
+4:23pm 580 East 9 Street
+1:47pm 680 East 2 Street
+2:40pm 130 East 7 Street
+12:01pm 147 South 12 Street
+5:58pm 140 East 1 Street
+2:24pm 220 East 0 Street
+6:51pm 240 East 8 Street
+3:00pm 162 South 15 Street
+11:40am 10 East 6 Street
+3:53pm 1030 South 0 Street
+3:41pm 410 East 3 Street
+2:25pm 1463 South 12 Street
+1:56pm 1897 South 10 Street
+3:37pm 200 East 2 Street
+6:09pm 684 South 0 Street
+12:20pm 780 East 6 Street
+4:35pm 340 East 6 Street
