@@ -3,34 +3,36 @@ import java.util.Random;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
+
+
+
 /*
  * Created by espinoa@moravian.edu on 2/27/19.
  */
 public class RandomAddresses {
-    static int HouseNumber;
-    static int StreetAddress;
-    static int StreetNumber;
-    static String StreetName;
+    int HouseNumber;
+    int StreetAddress;
+    int StreetNumber;
+    String StreetName;
     String FinalAddress;
     int  count;
     int Hour;
     int Minute;
+    int sandwichNumber;
+    int chipsNumber;
+    int drinkNumber;
     static int MaxHour = 19;
     static int MinHour = 10;
     static int MaxMinute = 59;
+
     Random randomgenerator = new Random();
     Random HourGenerator = new Random();
-    Random MinuteGenerator= new Random();
-    public RandomAddresses() {
-
-    }
-
-
-    public RandomAddresses(int HouseNumber, int StreetNumber, String StreetName) {
-        this.HouseNumber = HouseNumber;
-        this.StreetNumber = StreetNumber;
-        this.StreetName = StreetName;
-    }
+    Random MinuteGenerator = new Random();
+    Random SandwichGenerator = new Random();
+    Random ChipsGenerator = new Random();
+    Random DrinksGenerator = new Random();
+    final int  MINIMUM= 100;
+    final int MAX = 400;
 
     public void GenerateAddresses()
     {
@@ -38,6 +40,18 @@ public class RandomAddresses {
         count = 0;
         while (count <= 100) {
             int s = randomgenerator.nextInt(2);
+            sandwichNumber = SandwichGenerator.nextInt(2);
+            chipsNumber = ChipsGenerator.nextInt(1);
+            drinkNumber = DrinksGenerator.nextInt(2);
+            if (sandwichNumber == 0){
+                sandwichNumber = 3;
+            }
+            if (chipsNumber == 0){
+                chipsNumber = 2;
+            }
+            if (drinkNumber == 0){
+                drinkNumber = 3;
+            }
             if(s == 0){
                 StreetName = "South";
                 StreetNumber = randomgenerator.nextInt(20);
@@ -49,8 +63,7 @@ public class RandomAddresses {
                 HouseNumber = 1 + randomgenerator.nextInt(100);
                 HouseNumber = HouseNumber * 10;
             }
-            final int  MINIMUM= 100;
-            final int MAX = 400;
+
             StreetAddress = 1+randomgenerator.nextInt(MAX - MINIMUM) + MINIMUM;
             Hour = HourGenerator.nextInt(MaxHour - MinHour) + MinHour;
             boolean Morning = true;
@@ -61,11 +74,11 @@ public class RandomAddresses {
                 Morning = false;}
             Minute = MinuteGenerator.nextInt(MaxMinute);
             if (Minute < 10){
-                FinalAddress = Hour + ":0" + Minute + (Morning ? "am" : "pm") + " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
+                FinalAddress = Hour + ":0" + Minute + (Morning ? "am" : "pm") + " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street. Order: Sandwich " + sandwichNumber + " Chips " + chipsNumber + " Drink " + drinkNumber;
 
             }
             else {
-                FinalAddress = Hour + ":" + Minute + (Morning ? "am" : "pm")+ " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street";
+                FinalAddress = Hour + ":" + Minute + (Morning ? "am" : "pm")+ " " + String.valueOf(HouseNumber) + " " + StreetName + " " + String.valueOf(StreetNumber) + " Street. Order: Sandwich " + sandwichNumber + " Chips " + chipsNumber + " Drink " + drinkNumber;
             }
             AddressList[count] = FinalAddress;
             count++;
@@ -92,23 +105,23 @@ public class RandomAddresses {
         }
     }
 
-    public static int getHouseNumber() {
+    public int getHouseNumber() {
         return HouseNumber;
     }
 
-    public static int getStreetAddress() {
+    public int getStreetAddress() {
         return StreetAddress;
     }
 
-    public static int getStreetNumber() {
+    public int getStreetNumber() {
         return StreetNumber;
     }
 
-    public  static String getStreetName() {
+    public String getStreetName() {
         return StreetName;
     }
 
-    public  String getFinalAddress() {
+    public String getFinalAddress() {
         return FinalAddress;
     }
 

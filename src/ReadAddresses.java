@@ -5,6 +5,9 @@ public class ReadAddresses {
 
 
 
+
+
+
     public static PriorityQueue TimePriority(){
         PriorityQueue<String> queue = new PriorityQueue<>();
         File file = new File("AddressList.txt");
